@@ -5,7 +5,7 @@
     <a href="#-licença">📃 Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-observações">📌 Observações</a>
 </p>
-<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap">
+<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap"  align="center">
     <img width="300" style="border-radius: 10px" height="auto" alt="Página principal do site barbearia alura" src=".github/home.png"/>
      <img width="300" style="border-radius: 10px" height="auto" alt="Página principal do site barbearia alura" src=".github/main.png"/>
     <img width="350" style="border-radius: 10px" height="auto" alt="Página principal do site barbearia alura" src=".github/footer.png"/>
