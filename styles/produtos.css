@@ -1,0 +1,42 @@
+/** MAIN **/
+main ul {
+  width: 94rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+main ul li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  padding: 3rem 2rem;
+  margin: 1.5%;
+  border: 0.2px solid #000000;
+  border-radius: 1rem;
+  transition: 0.5s all;
+}
+
+main ul li h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+main ul li:hover {
+  border-color: #c78c19;
+  transform: scale(1.1);
+}
+
+main ul li:active {
+  border-color: #088c19;
+}
+
+.descricao {
+  font-size: 1.8rem;
+}
+
+.produto-preco {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
