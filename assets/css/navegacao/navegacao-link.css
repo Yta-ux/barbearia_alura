@@ -1,0 +1,13 @@
+.navegacao__link{
+  display: inline-block;
+  font-weight: 500;
+  color: #fdfdfd;
+  transition: all .2s;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.navegacao__link:hover{
+  color: #000;
+  background-color: #fdfdfd;
+}
