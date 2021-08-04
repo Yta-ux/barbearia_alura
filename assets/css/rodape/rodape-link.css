@@ -1,0 +1,7 @@
+.rodape__link{
+  margin-right: 2rem;
+}
+
+.rodape__link:last-child{
+  margin-right: 0;
+}

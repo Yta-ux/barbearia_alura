@@ -18,6 +18,9 @@
     <link href="assets/css/navegacao/navegacao-itens.css" rel="stylesheet">
     <link href="assets/css/navegacao/navegacao-item.css" rel="stylesheet">
     <link href="assets/css/navegacao/navegacao-link.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape-link.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape-imagem.css" rel="stylesheet">
 
     <title>Barbearia Alura</title>
   </head>
@@ -37,24 +40,26 @@
     </header>
 
     <main>
-      <section class="principal">
-        <h1 class="titulo-principal">Sobre a Barbearia Alura</h1>
+      <section class="sobre">
+        <img src="images/utensilios.jpg" class="sobre__imagem" alt/>
 
-        <img src="images/utensilios.jpg" class="utensilios" alt="utensílios" />
+        <div class="sobre__container">
+        <h1 class="sobre__titulo">Sobre a Barbearia Alura</h1>
 
-        <p>
+        <p class="sobre__texto">
           Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
         </p>
 
-        <p>
-          <em>Nossa missão é:
-            <strong> "Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em>
+        <p class="sobre__texto">
+          <em>Nossa missão é: <strong> "Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em>
         </p>
 
-        <p>
+        <p class="sobre__texto">
           Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
         </p>
+      </div>
       </section>
+
       <section class="mapa">
         
         <h3 class="titulo-principal">Nosso estabelecimento</h3>
@@ -80,11 +85,11 @@
       <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-      </section>
     </main>
-    <footer>
-      <!-- <img src="images/logo-branco.png" alt="logo" /> -->
-      <p>&copy;Copyright Barbearia Alura - 2021</p>
+    <footer class="rodape">
+      <a class="rodape__link" target="_blank" href="https://www.instagram.com"><img class="rodape__imagem"src="assets/img/instagram.svg" alt="ícone do instagram"></a>
+      <a class="rodape__link" target="_blank" href="https://www.facebook.com"><img class="rodape__imagem" src="assets/img/facebook.svg" alt="ícone do instagram"> </a>
+      <a class="rodape__link" target="_blank" href="https://www.github.com"><img class="rodape__imagem" src="assets/img/github.svg" alt="ícone do instagram"></a>
     </footer>
   </body>
 </html>
