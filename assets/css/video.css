@@ -1,0 +1,7 @@
+.video{
+  text-align: center;
+}
+
+.video iframe{
+  max-width: 100%;
+}

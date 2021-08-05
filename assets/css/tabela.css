@@ -1,0 +1,25 @@
+td{
+  border-collapse: collapse;
+
+  padding: 1.4rem;
+  /* border-bottom: 1px solid #7a7a7aa6; */
+}
+
+td:nth-child(odd){
+  border-right: 1px solid #7a7a7aa6;
+  border-collapse: collapse;
+
+}
+
+tr:last-child(){
+  border-bottom: 1px solid #7a7a7aa6;
+
+}
+tr{
+  color: #fdfdfd;
+}
+
+
+td{
+  font-size: 2rem;
+}
