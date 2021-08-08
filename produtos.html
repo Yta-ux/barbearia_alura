@@ -5,62 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./styles/produtos.css" />
-    <link rel="stylesheet" href="styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet"> 
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link href="assets/css/cabecalho/cabecalho.css" rel="stylesheet">
+    <link href="assets/css/cabecalho/cabecalho-imagem.css" rel="stylesheet">
+    <link href="assets/css/navegacao/navegacao.css" rel="stylesheet">
+    <link href="assets/css/navegacao/navegacao-itens.css" rel="stylesheet">
+    <link href="assets/css/navegacao/navegacao-item.css" rel="stylesheet">
+    <link href="assets/css/navegacao/navegacao-link.css" rel="stylesheet">
+    <link href="assets/css/cards/cards.css" rel="stylesheet">
+    <link href="assets/css/cards/card.css" rel="stylesheet">
+    <link href="assets/css/cards/card-titulo.css" rel="stylesheet">
+    <link href="assets/css/cards/card-imagem.css" rel="stylesheet">
+    <link href="assets/css/cards/card-preco.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape-link.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape-imagem.css" rel="stylesheet">
     <title>Produtos - Barbearia Alura</title>
   </head>
   <body>
-    <header>
-      <div class="box">
-        <h1><img src="images/logo.png" alt="logo" /></h1>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <header class="cabecalho">
+      <img src="assets/img/logo-branco.png" alt="logo" class="cabecalho__imagem"/>
+      <nav class="navegacao">
+        <ul class="navegacao__itens">
+          <li class="navegacao__item"><a class="navegacao__link" href="index.html">Home</a></li>
+          <li class="navegacao__item"><a class="navegacao__link" href="produtos.html">Produtos</a></li>
+          <li class="navegacao__item"><a class="navegacao__link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
 
     <main>
-      <ul>
-        <li>
-          <h2>Cabelo</h2>
-          <img src="images/cabelo.jpg" alt="cabelo" />
-          <p class="descricao">
-            Na tesoura ou máquina, como o cliente preferir
-          </p>
-          <p class="produto-preco">R$ 25,00</p>
-        </li>
+      <div class="cards">
+        <section class="card">
+          <h2 class="card__titulo">Cabelo</h2>
+          <img class="card__imagem" src="assets/img/cabelo.jpg"/>
+          <span class="card__preco">R$ 25,00</span>
+        </section>
+        <section class="card">
+          <h2 class="card__titulo">Barba</h2>
+          <img class="card__imagem" src="assets/img/barba.jpg"/>
+          <span class="card__preco">R$ 25,00</span>
+        </section>
+        <section class="card">
+          <h2 class="card__titulo">Cabelo + Barba</h2>
+          <img class="card__imagem" src="assets/img/cabelo+barba.jpg"/>
+          <span class="card__preco">R$ 25,00</span>
+        </section>
+        <section class="card">
+          <h2 class="card__titulo">Cabelo + Barba</h2>
+          <img class="card__imagem" src="assets/img/cabelo+barba.jpg"/>
+          <span class="card__preco">R$ 25,00</span>
+        </section>
+        <section class="card">
+          <h2 class="card__titulo">Cabelo + Barba</h2>
+          <img class="card__imagem" src="assets/img/cabelo+barba.jpg"/>
+          <span class="card__preco">R$ 25,00</span>
+        </section>
+        <section class="card">
+          <h2 class="card__titulo">Cabelo + Barba</h2>
+          <img class="card__imagem" src="assets/img/cabelo+barba.jpg"/>
+          <span class="card__preco">R$ 25,00</span>
+        </section>
+        <section class="card">
+          <h2 class="card__titulo">Cabelo + Barba</h2>
+          <img class="card__imagem" src="assets/img/cabelo+barba.jpg"/>
+          <span class="card__preco">R$ 25,00</span>
+        </section>
+        <section class="card">
+          <h2 class="card__titulo">Cabelo + Barba</h2>
+          <img class="card__imagem" src="assets/img/cabelo+barba.jpg"/>
+          <span class="card__preco">R$ 25,00</span>
+        </section>
+        </div>
+      </main>
 
-        <li>
-          <h2>Barba</h2>
-          <img src="images/barba.jpg" alt="barba" />
-          <p class="descricao">Corte e desenho profissional de barba</p>
-          <p class="produto-preco">R$ 18,00</p>
-        </li>
-
-        <li>
-          <h2>Cabelo + Barba</h2>
-          <img src="images/cabelo+barba.jpg" alt="cabelo_mais_barba" />
-          <p class="descricao">Pacote completo de cabelo e barba</p>
-          <p class="produto-preco">R$ 35,00</p>
-        </li>
-      </ul>
-    </main>
-
-    <footer>
-      <img src="images/logo-branco.png" alt="logo" />
-      <p>&copy;Copyright Barbearia Alura - 2021</p>
+    <footer class="rodape">
+      <a class="rodape__link" target="_blank" href="https://www.instagram.com"><img class="rodape__imagem"src="assets/img/instagram.svg" alt="ícone do instagram"></a>
+      <a class="rodape__link" target="_blank" href="https://www.facebook.com"><img class="rodape__imagem" src="assets/img/facebook.svg" alt="ícone do instagram"> </a>
+      <a class="rodape__link" target="_blank" href="https://www.github.com"><img class="rodape__imagem" src="assets/img/github.svg" alt="ícone do instagram"></a>
     </footer>
   </body>
 </html>

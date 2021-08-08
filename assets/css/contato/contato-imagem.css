@@ -1,0 +1,24 @@
+.contato__imagem img{
+  max-width: 100%;
+}
+
+@media screen and (min-width: 0){
+  .contato__imagem{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .contato__imagem{
+    display: block;
+    width: 40%;
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .contato__imagem{
+    width: 50%;
+    height: 40rem;
+  }
+}

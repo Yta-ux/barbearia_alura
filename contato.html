@@ -5,120 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="./styles/contato.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet"> 
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/content.css" />
+    <link href="assets/css/cabecalho/cabecalho.css" rel="stylesheet">
+    <link href="assets/css/cabecalho/cabecalho-imagem.css" rel="stylesheet">
+    <link href="assets/css/navegacao/navegacao.css" rel="stylesheet">
+    <link href="assets/css/navegacao/navegacao-itens.css" rel="stylesheet">
+    <link href="assets/css/navegacao/navegacao-item.css" rel="stylesheet">
+    <link href="assets/css/navegacao/navegacao-link.css" rel="stylesheet">
+    <link href="assets/css/contato/contato.css" rel="stylesheet">
+    <link href="assets/css/contato/contato-botao.css" rel="stylesheet">
+    <link href="assets/css/contato/contato-campo.css" rel="stylesheet">
+    <link href="assets/css/contato/contato-imagem.css" rel="stylesheet">
+    <link href="assets/css/contato/contato-mensagem.css" rel="stylesheet">
+    <link href="assets/css/contato/contato-opcoes.css" rel="stylesheet">
+    <link href="assets/css/contato/contato-nome.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape-link.css" rel="stylesheet">
+    <link href="assets/css/rodape/rodape-imagem.css" rel="stylesheet">
     <title>Contato - Barbearia Alura</title>
   </head>
   <body>
-    <header>
-      <div class="box">
-        <h1><img src="images/logo.png" alt="logo" /></h1>
-
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <header class="cabecalho">
+      <img src="assets/img/logo-branco.png" alt="logo" class="cabecalho__imagem"/>
+      <nav class="navegacao">
+        <ul class="navegacao__itens">
+          <li class="navegacao__item"><a class="navegacao__link" href="index.html">Home</a></li>
+          <li class="navegacao__item"><a class="navegacao__link" href="produtos.html">Produtos</a></li>
+          <li class="navegacao__item"><a class="navegacao__link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
 
     <main>
-      <form action="#">
-        <label for="name">Nome Completo:</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          class="input-padrao"
-          required
-        />
+      <div class="content">
+      <form action="#" class="contato">
+        <label for="name" class="contato__nome">Nome Completo:</label>
+        <input type="text" name="name" id="name" class="contato__campo" required />
 
-        <label for="email">E-mail:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="email@dominio.com"
-          class="input-padrao"
-          required
-        />
+        <label for="email" class="contato__nome">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@dominio.com" class="contato__campo" required />
 
-        <label for="tel">Telefone:</label>
-        <input
-          type="tel"
-          name="tel"
-          id="tel"
-          placeholder="(XX) XXXXX-XXXX"
-          class="input-padrao"
-          required
-        />
-
-        <label for="message">Mensagem:</label>
-        <textarea cols="70" rows="10" id="message" class="input-padrao">
+        <label for="message" class="contato__nome">Mensagem:</label>
+        <textarea cols="70" rows="10" id="message" class="contato__mensagem">
         </textarea>
 
         <fieldset>
-          <legend>Como prefere o nosso contato?</legend>
-          <label for="radio-email">
-            <input
-              type="radio"
-              name="contato"
-              value="email"
-              id="radio-email"
-            />Email</label
-          >
-
-          <label for="radio-telefone"
-            ><input
-              type="radio"
-              name="contato"
-              value="telefone"
-              id="radio-telefone"
-            />Telefone</label
-          >
-
-          <label for="radio-whatsapp"
-            ><input
-              type="radio"
-              name="contato"
-              value="whatsapp"
-              id="radio-whatsapp"
-            />Whatsapp</label
-          >
-        </fieldset>
-
-        <fieldset>
-          <legend>Qual horário prefere ser atendido?</legend>
-          <select>
-            <option>Selecione uma opção</option>
-            <option>Manhã</option>
-            <option>Tarde</option>
-            <option>Noite</option>
+          <legend class="contato__nome">Qual horário prefere ser atendido?</legend>
+          <select class="contato__opcoes">
+            <option class="opcoes__item">Selecione uma opção</option>
+            <option class="opcoes__item">Manhã</option>
+            <option class="opcoes__item">Tarde</option>
+            <option class="opcoes__item">Noite</option>
           </select>
         </fieldset>
 
-        <label
-          ><input type="checkbox" /> Gostaria de receber nossas novidades por
-          email?</label
-        >
-
-        <input type="submit" value="Enviar Formulário" />
+        <input type="submit" value="Enviar" class="contato__botao"/>
       </form>
 
-      
+      <div class="contato__imagem">
+        <img src="assets/img/barber-hair.svg">
+      </div>
+    </div>
     </main>
-    <footer>
-      <img src="images/logo-branco.png" alt="logo" />
-      <p>&copy;Copyright Barbearia Alura - 2021</p>
+
+    <footer class="rodape">
+      <a class="rodape__link" target="_blank" href="https://www.instagram.com"><img class="rodape__imagem"src="assets/img/instagram.svg" alt="ícone do instagram"></a>
+      <a class="rodape__link" target="_blank" href="https://www.facebook.com"><img class="rodape__imagem" src="assets/img/facebook.svg" alt="ícone do instagram"> </a>
+      <a class="rodape__link" target="_blank" href="https://www.github.com"><img class="rodape__imagem" src="assets/img/github.svg" alt="ícone do instagram"></a>
     </footer>
+  </div>
   </body>
 </html>
