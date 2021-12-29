@@ -1,6 +1,6 @@
 .sobre{
   display: flex;
-  height: calc(100vh - 124px);
   align-items: center;
   padding: 0 5rem;
+  margin: 2rem 2rem 4rem 2rem;
 }
