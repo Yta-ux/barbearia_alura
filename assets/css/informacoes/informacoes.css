@@ -1,6 +1,18 @@
-.informacoes{
-  background-color: #141615;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+@media (min-width: 0) {
+  .informacoes {
+    background-color: #141615;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 580px) {
+  .informacoes {
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: left;
+  }
 }

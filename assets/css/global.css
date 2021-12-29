@@ -5,11 +5,11 @@
   text-decoration: none;
 }
 
-html{
+html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container {
   padding: 5rem calc((100% - 940px)/2);
 }

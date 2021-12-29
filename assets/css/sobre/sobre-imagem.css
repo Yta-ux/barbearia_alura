@@ -1,0 +1,12 @@
+@media (min-width: 0) {
+    .sobre__container-imagem {
+        display: none;
+        width: 450px;
+    }
+}
+
+@media (min-width: 990px) {
+    .sobre__container-imagem {
+        display: block;
+    }
+}

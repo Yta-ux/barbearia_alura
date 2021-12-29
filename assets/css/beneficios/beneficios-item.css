@@ -1,5 +1,17 @@
-.beneficios__item{
-  font-size: 2rem;
-  line-height: 2;
-  color: #fdfdfd;
+@media (min-width: 0) {
+  .beneficios__item {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #fdfdfd;
+    list-style: none;
+  }
+
+}
+
+@media (min-width: 580px) {
+  .beneficios__item {
+    font-size: 2rem;
+    list-style: disc;
+  }
+
 }

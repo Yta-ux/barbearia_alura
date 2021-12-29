@@ -1,4 +1,12 @@
-.sobre__texto{
-    font-size: 2rem;
-    line-height: 2;
+@media (min-width: 0) {
+    .sobre__texto {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+}
+
+@media (min-width: 574px) {
+    .sobre__texto {
+        font-size: 2rem;
+    }
 }

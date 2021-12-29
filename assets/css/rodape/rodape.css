@@ -1,7 +1,8 @@
-.rodape{
-  background-color: #141615;
-  padding: 2rem;
-  display: flex;
+.rodape {
   align-items: center;
+  background-color: #141615;
+  display: flex;
   justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }

@@ -1,14 +1,22 @@
-.contato__botao{
-  align-self: flex-end;
-  height: 4.5rem;
-  width: 25%;
-  color: #fdfdfd;
-  background-color: #141615;
-  border-radius: 8px;
-  transition: all .2s;
-  cursor: pointer;
+.contato__botao:hover {
+  opacity: .95;
 }
 
-.contato__botao:hover{
-  opacity: .95;
+@media (min-width: 0) {
+  .contato__botao {
+    align-self: center;
+    height: 4.5rem;
+    width: 100%;
+    color: #fdfdfd;
+    background-color: #141615;
+    border-radius: 8px;
+    transition: all .2s;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 530px) {
+  .contato__botao {
+    width: 80%;
+  }
 }
